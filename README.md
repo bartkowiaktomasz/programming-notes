@@ -1,2 +1,2 @@
-# programming_notes
+# Programming/Software Engineering notes
 Programming notes
