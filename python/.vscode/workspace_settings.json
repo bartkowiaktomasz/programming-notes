@@ -1,0 +1,19 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.formatting.blackPath": "<path>/black",
+    "python.linting.pylintPath": "<path>/pylint",
+    "python.linting.pylintArgs": [
+        "--rcfile=${workspaceFolder}/.pylintrc"
+    ],
+    "python.pythonPath": "<path>/python",
+    "python.testing.cwd": "${workspaceFolder}/<module>",
+    "python.testing.pytestArgs": [
+        "--rootdir","${workspaceFolder}"
+    ]
+}

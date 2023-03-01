@@ -1,0 +1,27 @@
+
+alias charm='open /Applications/PyCharm.app'
+alias lsu='ls -la | grep $USER'
+alias dk=docker
+alias dkc=docker-compose
+alias k=kubectl
+
+# GIT
+alias gfod='git fetch origin develop:develop'
+alias gmd='git merge develop'
+
+# Rename branch. Usage: gbm [name]
+gbm() {
+    git branch -m $1
+}
+
+# Docker functions
+
+# Show logs. Usage: dkl [name]
+dkl() {
+    docker logs $(docker ps -a -q --filter="name=$1")
+}
+
+# Show logs and follow. Usage: dklf [name]
+dklf() {
+    docker logs -f $(docker ps -a -q --filter="name=$1")
+}
